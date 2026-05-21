@@ -1,0 +1,25 @@
+{
+  "name": "cypress-test-examples",
+  "version": "1.0.0",
+  "description": "E2E тесты на Cypress для промышленного веб-приложения по управлению энергетическими системами",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "lint": "eslint e2e/**/*.js support/**/*.js",
+    "lint:fix": "eslint e2e/**/*.js support/**/*.js --fix",
+    "format": "prettier --write e2e/**/*.js support/**/*.js"
+  },
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-real-events": "^1.10.3",
+    "eslint": "^8.57.1",
+    "eslint-plugin-cypress": "^2.15.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}
